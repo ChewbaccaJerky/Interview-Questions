@@ -1,4 +1,5 @@
 [React-LifeCycle]: img/low-level-lifecycle.png
+[Flux-Cycle]: img/flux.png
 # ReactJS Study Guide
 
 # 1. What is ReactJS?
@@ -12,6 +13,22 @@ At a high-level it is broken into 3 parts:
 
 Low-level:
 
-![Low-Level Life Cycle](React-LifeCycle)
+![Low-Level Life Cycle][React-LifeCycle]
 
 
+# 3. What can you tell me about JSX?
+
+When Facebook introduce ReactJS to the world they also create a dialect JSX which allows embeded raw HTML to their JavaScript. Browsers can't render direct JSX which needed babel and webpack to convert JSX to JS. JSX has been the de facto of creating React Components.
+
+Developing with JSX allows a declarative syntax which reduces the complexity of the code. Developing with JSX developers with adopt ES2015 syntatic sugar: class, block scoping, and the new spread operator.
+
+Examples of experiences:
+```
+    It took a bit of time at first getting use to JSX and ES2015 but after learning it, I discoverd how much I enjoy JSX and ES6. Specifically, I am a big fan of Class syntax ES6 has to offer which is closer to lower-level languages like Java which makes the code declarative and reduces the amount of overhead. The code becomes more readable with less overhead.
+
+    But on the other hand I can do without configuring webpack but it is a necessary evil to improve quick deployment and creating components quickly.
+```
+
+# 4. Are you familiar with Flux?
+
+Flux is an architectural pattern that forces unidirectional data flow. Flux design patttern is generic, so you can apply these concepts outside of React Applications.
