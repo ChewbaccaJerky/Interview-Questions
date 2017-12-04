@@ -56,11 +56,19 @@ Flux is an architectural pattern that forces unidirectional data flow. Flux desi
     - Holds the global state of an application. Central component of the Redux's architecture.
     - Updates App state with the reducers.
     - Listens for actions to change the global state.
+- Reducer
+    - Updates the store's state.
+    - Receives the current state and action
+    - Updates the state appropriately based on the action.type
+    - returns the next state
+    - You should never mutate its arguments(i.e. state and action). Returns a new object if state changes.
+        - Use ``` Object.freeze(state); ```
 - View
     - 
 
-A popular library which implements flux in react is Redux.
 
+A popular library which implements flux in react is Redux.
+``
 
 # 5. What are stateless components?
 They are reusable components also known as pure functions. Renders onto the DOM, solely with properties that provided. 
