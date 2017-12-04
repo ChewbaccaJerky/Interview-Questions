@@ -1,8 +1,21 @@
 [React-LifeCycle]: img/low-level-lifecycle.png
 [Flux-Cycle]: img/flux.png
+
 # ReactJS Study Guide
 
 # 1. What is ReactJS?
+
+React is a UI library developed by Facebook. Facebook uses in production and instargram is built entirely with React.
+
+React uses the Virtual DOM that selectively renders subtress of nodes base upon state changes. It does least amount of DOM manipulation in order to keep components up to date. 
+
+# 1a. How does React work?
+When there is a change in the state. 
+
+ 1. React uses a "diffing" algorithm
+ 2. Reconciliation, where it updates the DOM with the results of the difference.
+
+Rather than starting over with a clean state it actually only changes the components where the slice of state is changed.
 
 # 2. What happens during the lifecycle of a React Component?
 
@@ -32,3 +45,28 @@ Examples of experiences:
 # 4. Are you familiar with Flux?
 
 Flux is an architectural pattern that forces unidirectional data flow. Flux design patttern is generic, so you can apply these concepts outside of React Applications.
+
+![Flux Cycle][Flux-Cycle]
+
+- Action
+    - The only way to for view components to trigger changes to the store. The send a mandatory type key and optional payload keys containing new information. They are sent using the store.dispatch() and are the primary drivers of Redux loop.
+- Dispatcher
+    - Dispatches actions.
+- Store
+    - Holds the global state of an application. Central component of the Redux's architecture.
+    - Updates App state with the reducers.
+    - Listens for actions to change the global state.
+- View
+    - 
+
+A popular library which implements flux in react is Redux.
+
+
+# 5. What are stateless components?
+They are reusable components also known as pure functions. Renders onto the DOM, solely with properties that provided. 
+
+
+# 6. What is Middleware?
+# 6a. Explain
+
+# 7. How does ReactJS work?
